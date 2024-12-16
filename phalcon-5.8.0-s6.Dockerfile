@@ -42,7 +42,7 @@ RUN apk add --no-cache --virtual build-dependencies build-base tzdata autoconf &
     pecl install apcu-${APCU_VERSION} && \
     pecl install xdebug-${XDEBUG_VERSION}  && \
     /usr/bin/install-php-extensions soap xmlrpc && \
-    # docker-php-ext-enable phalcon && \
+    docker-php-ext-enable phalcon && \
     docker-php-ext-enable psr sockets memcached redis ev apcu yaml zephir_parser msgpack igbinary && \
     docker-php-ext-enable event --ini-name zz-event.ini && \
     cp /usr/share/zoneinfo/$TZ /etc/localtime && \

@@ -55,5 +55,5 @@ RUN apk add --no-cache --virtual build-dependencies build-base tzdata autoconf &
 # 添加了 soap, xmlrpc
 # 添加了 scripts/*
 # 复制 composer.phax 到镜像中
-# xdebug 和 phalcon 没有主动激活
+# xdebug, phalcon 没有主动激活 —— 废弃：phalcon 必须主动激活，否则无法使用
 # docker build -f phalcon-5.8.0-s5.Dockerfile  -t authus/phalcon:5.8.0-s5 .

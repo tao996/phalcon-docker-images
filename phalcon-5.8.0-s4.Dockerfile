@@ -54,5 +54,5 @@ RUN apk add --no-cache --virtual build-dependencies build-base tzdata autoconf &
 
 # 添加了 soap, swoole, xmlrpc
 # 添加了 scripts/*
-# 复制 phax/artisan 和 composer.phax 到镜像中
+# 复制 composer.phax 到镜像中
 # docker build -f phalcon-5.8.0-s4.Dockerfile  -t authus/phalcon:5.8.0-s4 .
